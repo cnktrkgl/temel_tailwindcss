@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwindcss Breakpoint and Responsive Design</title>
+    <style type="text/tailwindcss">
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+      @layer utilities {
+      }
+    </style>
+    <script>
+      tailwind.config = {};
+    </script>
+  </head>
+  <body>
+    <h1 class="text-center text-5x1 mb-5">Responsive Design - Breakpoints</h1>
+    <div class="container mx-auto p-10 mb-5">
+      <img src="https://picsum.photos/seed/picsum/536/354" />
+      <img
+        class="w-16 sm:w-24 md:w-48 lg:w-96"
+        src="https://picsum.photos/seed/picsum/536/354"
+      />
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="bg-gray-700">First Section</div>
+      <div class="bg-green-700">Second Section</div>
+      <div class="bg-red-700">Third Section</div>
+    </div>
+    <p class="text-green-700 lg:text-red-700 my-10 text-4xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, iste rem
+      ipsam porro fuga aliquid fugiat similique deleniti, nemo, totam tempore
+      recusandae provident minus quae necessitatibus libero a id ut?
+    </p>
+    <div
+      class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img
+            class="h-48 w-full object-cover md:h-full md:w-48"
+            src="https://picsum.photos/seed/picsum/536/354"
+            alt="Modern building architecture"
+          />
+        </div>
+        <div class="p-8">
+          <div
+            class="uppercase tracking-wide text-sm text-indigo-500 font-semibold"
+          >
+            Company retreats
+          </div>
+          <a
+            href="#"
+            class="block mt-1 text-lg leading-tight font-medium text-black hover:underline"
+            >Incredible accommodation for your team</a
+          >
+          <p class="mt-2 text-slate-500">
+            Looking to take your team away on a retreat to enjoy awesome food
+            and take in some sunshine? We have a list of places to do just that.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
